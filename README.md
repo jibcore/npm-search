@@ -1,3 +1,5 @@
+## NPM Seach via AlgoliaSearch
+
 ## Project Setup
 
 ```sh
