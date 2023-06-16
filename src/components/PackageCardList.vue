@@ -11,7 +11,7 @@ defineProps({
   }
 })
 
-const emit = defineEmits(['onPackageClicked', 'onPageChanged'])
+const emit = defineEmits(['onPackageClick', 'onPageChanged'])
 </script>
 
 <template>

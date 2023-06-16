@@ -2,7 +2,10 @@
 import millify from 'millify'
 
 const props = defineProps({
-  packageInfo: Object
+  packageInfo: {
+    type: Object,
+    required: true
+  }
 })
 
 const userUrl = `https://www.jsdelivr.com/?query=${encodeURIComponent(

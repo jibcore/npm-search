@@ -1,7 +1,8 @@
 <script setup>
 const props = defineProps({
   packageInfo: {
-    type: Object
+    type: Object,
+    required: true
   }
 })
 
@@ -11,7 +12,6 @@ const gitHubUrl = props.packageInfo.githubRepo
   ? `https://github.com/${props.packageInfo.githubRepo.user}/${props.packageInfo.githubRepo.project}/`
   : ''
 const npmUrl = `https://www.npmjs.com/package/${props.packageInfo.name}`
-// const packageUrl = `https://www.jsdelivr.com/package/npm/${props.packageInfo.name}`
 </script>
 
 <template>

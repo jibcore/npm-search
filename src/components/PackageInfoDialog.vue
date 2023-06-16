@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  packageInfo: Object
+  packageInfo: [Object, undefined]
 })
 
 const emit = defineEmits(['close'])

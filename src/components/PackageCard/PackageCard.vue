@@ -4,7 +4,10 @@ import PackageCardSubtitle from './PackageCardSubtitle.vue'
 import PackageCardFooter from './PackageCardFooter.vue'
 
 defineProps({
-  packageInfo: Object
+  packageInfo: {
+    type: Object,
+    required: true
+  }
 })
 
 let emit = defineEmits(['packageClick'])

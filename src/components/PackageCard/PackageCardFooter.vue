@@ -1,6 +1,9 @@
 <script setup>
 defineProps({
-  packageInfo: Object
+  packageInfo: {
+    type: Object,
+    required: true
+  }
 })
 </script>
 
