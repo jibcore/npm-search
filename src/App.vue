@@ -33,10 +33,14 @@ onMounted(() => {
 })
 
 async function refreshItems() {
-  let response = await search(searchQuery, page.value - 1, itemsPerPage)
-  page.value = response.page + 1
-  totalPages.value = response.nbPages
-  items.value = response.hits
+  try {
+    let response = await search(searchQuery, page.value - 1, itemsPerPage)
+    page.value = response.page + 1
+    totalPages.value = response.nbPages
+    items.value = response.hits
+  } catch (e) {
+    console.log(e)
+  }
 }
 
 function onPageChanged(nextPage) {
